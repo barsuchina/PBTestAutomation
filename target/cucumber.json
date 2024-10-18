@@ -1,0 +1,143 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User dhoul be logged in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2024-10-17T23:40:46.931Z",
+        "line": 4,
+        "name": "As a user, I want to logout from the Parabank site with valid credentials",
+        "description": "",
+        "id": "logout-parabank-test;as-a-user--i-want-to-logout-from-the-parabank-site-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1027200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open the browser",
+            "match": {
+              "location": "com.stepdef.StepDef.open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "pass the Parabank URL",
+            "match": {
+              "location": "com.stepdef.StepDef.pass_parabank_url(java.lang.String)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "https://parabank.parasoft.com/parabank/index.htm?ConnType\u003dJDBC"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter the username",
+            "match": {
+              "location": "com.stepdef.StepDef.enter_username(java.lang.String)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "barsuchina"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Enter the password",
+            "match": {
+              "location": "com.stepdef.StepDef.enter_password(java.lang.String)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Barsuchina"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click on login button",
+            "match": {
+              "location": "com.stepdef.StepDef.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Click on Logout button",
+            "match": {
+              "location": "com.stepdef.StepDef.click_logout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Validate logout is successful",
+            "match": {
+              "location": "com.stepdef.StepDef.validate_logout()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 978600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Quit all browser",
+            "match": {
+              "location": "com.stepdef.StepDef.tearDown()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Logout Parabank test",
+    "description": "",
+    "id": "logout-parabank-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/ParabankLogout.feature",
+    "tags": []
+  }
+]
